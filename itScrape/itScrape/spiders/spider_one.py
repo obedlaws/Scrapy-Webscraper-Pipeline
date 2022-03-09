@@ -7,12 +7,12 @@ from scrapy.loader import ItemLoader
 class iSpider(scrapy.Spider):
     name = "books"
 
-    #normal paginating trakes a lot more time
+    #normal pagination takes a lot more time (21 secs)
     #start_urls = [
     #    'https://www.barnesandnoble.com/b/books/_/N-1fZ29Z8q8?Nrpp=20&page='
     #]
 
-    #faster times scraping pagse
+    #faster times scraping pages(5-4 secs runs)
     url = 'https://www.barnesandnoble.com/b/books/_/N-1fZ29Z8q8?Nrpp=20&page={}'
 
     def start_requests(self):
